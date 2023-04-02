@@ -2,13 +2,13 @@ How to build PlatformIO based project
 =====================================
 
 1. [Install PlatformIO Core](https://docs.platformio.org/page/core.html)
-2. Download [development platform with examples](https://github.com/platformio/platform-nordicnrf52/archive/develop.zip)
+2. Download [development platform with examples](https://github.com/platformio/platform-espressif32/archive/develop.zip)
 3. Extract ZIP archive
 4. Run these commands:
 
 ```shell
 # Change directory to example
-$ cd platform-nordicnrf52/examples/zephyr-ble-beacon
+$ cd platform-espresif32/examples/zephyr-ble-beacon
 
 # Build project
 $ pio run
@@ -17,10 +17,10 @@ $ pio run
 $ pio run --target upload
 
 # Build specific environment
-$ pio run -e nrf52_dk
+$ pio run -e esp32-s3-devkitc-1
 
 # Upload firmware for the specific environment
-$ pio run -e nrf52_dk --target upload
+$ pio run -e esp32-s3-devkitc-1 --target upload
 
 # Clean build files
 $ pio run --target clean
