@@ -35,7 +35,8 @@
   },
   "frameworks": [
     "arduino",
-    "espidf"
+    "espidf",
+    "zephyr"
   ],
   "name": "Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)",
   "upload": {
