@@ -108,12 +108,12 @@ class Espressif32Platform(PlatformBase):
                 ):
                     self.packages["toolchain-%s" % target]["version"] = "11.2.0+2022r1"
                     
-            if "zephyr" in frameworks:
-                for p in self.packages:
-                    if p in ("tool-cmake", "tool-dtc", "tool-ninja"):
-                        self.packages[p]["optional"] = False
-                if not IS_WINDOWS:
-                    self.packages["tool-gperf"]["optional"] = False
+        if "zephyr" in frameworks:
+            for p in self.packages:
+                  if p in ("tool-cmake", "tool-dtc", "tool-ninja"):
+                    self.packages[p]["optional"] = False
+            if not IS_WINDOWS:
+                self.packages["tool-gperf"]["optional"] = False
 
         for available_mcu in ("esp32", "esp32s2", "esp32s3"):
             if available_mcu == mcu:
