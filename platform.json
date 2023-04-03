@@ -134,6 +134,11 @@
       "owner": "platformio",
       "version": "~3.16.0"
     },
+    "tool-dtc": {
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.4.7"
+    },
     "tool-ninja": {
       "optional": true,
       "owner": "platformio",
@@ -148,6 +153,11 @@
       "optional": true,
       "owner": "platformio",
       "version": "~1.0.1"
+    },
+    "tool-gperf": {
+      "optional": true,
+      "owner": "platformio",
+      "version": "^3.0.0"
     }
   }
 }
